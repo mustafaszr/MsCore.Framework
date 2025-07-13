@@ -17,9 +17,14 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>repository;repositories;unitofwork;unit-of-work;data-access;efcore;entityframework;crud;pagination;sorting;filtering;bulk-operations;generic-repository;dotnet;net8;modular;infrastructure;database-abstraction;di;dependency-injection;mscore;clean-architecture;ddd;data-layer;aspnetcore;entityframeworkcore;reusable-components</PackageTags>
     <PackageReleaseNotes>Initial release of MsCore.Framework.Repositories</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\PackageIcon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

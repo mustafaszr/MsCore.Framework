@@ -17,9 +17,14 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>logging;logger;file-logging;database-logging;http-logging;request-logging;response-logging;middleware;logentity;aspnetcore;dotnet;net8;observability;audit;exception-logging;error-logging;log-middleware;di;dependency-injection;modular-logging;composite-logger;centralized-logging;structured-logging;logging-framework;log-to-file;log-to-db;mscore;log-service;api-logging;web-api-logging;log-rotation;custom-logger;log-extensions</PackageTags>
     <PackageReleaseNotes>Initial release of MsCore.Framework.Logging</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\PackageIcon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

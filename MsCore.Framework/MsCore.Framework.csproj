@@ -18,9 +18,14 @@
     <RepositoryUrl>https://github.com/mustafaszr/MsCore.Framework.git</RepositoryUrl>
     <PackageReleaseNotes>Initial release of MsCore.Framework. Includes modular structure with standardized API response, logging, repository pattern, and utility helpers.</PackageReleaseNotes>
     <PackageTags>dotnet;net;net8;framework;modular;microservices;api;infrastructure;core;logging;middleware;repository;unitofwork;generic-repository;database;exception-handling;error-handling;http;httpclient;helper;utilities;extensions;di;dependency-injection;validation;fluentvalidation;standard-response;api-response;response-wrapper;error-response;pagination;file-logger;db-logger;log-entity;request-logging;response-logging;efcore;entityframework;linq;expression-builder;abstraction;service-layer;dotnetcore;mscore;modular-architecture;nuget;backend;developer-tools</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\PackageIcon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
