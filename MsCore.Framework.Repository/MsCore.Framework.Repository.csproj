@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageIcon>PackageIcon.png</PackageIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MsCore.Framework.Repositories – Generic Repository and Unit of Work for .NET</Title>
+    <Authors>Mustafa Sözer</Authors>
+    <Company>Mustafa Sözer</Company>
+    <Description>MsCore.Framework.Repositories provides a clean, extensible data access layer for .NET applications using the Generic Repository and Unit of Work patterns. It includes out-of-the-box support for common CRUD operations, filtering, pagination, sorting, and bulk data handling. Easily integrated with Entity Framework Core and supports dependency injection for testability and modular architecture.</Description>
+    <Copyright>© 2025 Mustafa Sözer. Licensed under the MIT License.</Copyright>
+    <PackageProjectUrl>https://github.com/mustafaszr/MsCore.Framework</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mustafaszr/MsCore.Framework.git</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>repository;repositories;unitofwork;unit-of-work;data-access;efcore;entityframework;crud;pagination;sorting;filtering;bulk-operations;generic-repository;dotnet;net8;modular;infrastructure;database-abstraction;di;dependency-injection;mscore;clean-architecture;ddd;data-layer;aspnetcore;entityframeworkcore;reusable-components</PackageTags>
+    <PackageReleaseNotes>Initial release of MsCore.Framework.Repositories</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\PackageIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EFCore.BulkExtensions.SqlServer" Version="8.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+  </ItemGroup>
+
+</Project>

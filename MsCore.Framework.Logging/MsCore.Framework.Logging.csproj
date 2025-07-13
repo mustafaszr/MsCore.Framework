@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageIcon>PackageIcon.png</PackageIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MsCore.Framework.Logging – Lightweight, Extensible .NET Framework with Logging</Title>
+    <Authors>Mustafa Sözer</Authors>
+    <Company>Mustafa Sözer</Company>
+    <Description>MsCore.Framework.Logging provides an extensible logging infrastructure for .NET applications with support for both file and database logging. It includes middleware for capturing HTTP requests and responses, customizable logging options via dependency injection, and a unified logging model (LogEntity) for centralized tracking. Designed for observability, auditing, and debugging in modular .NET backends.</Description>
+    <Copyright>© 2025 Mustafa Sözer. Licensed under the MIT License.</Copyright>
+    <PackageProjectUrl>https://github.com/mustafaszr/MsCore.Framework</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mustafaszr/MsCore.Framework.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>logging;logger;file-logging;database-logging;http-logging;request-logging;response-logging;middleware;logentity;aspnetcore;dotnet;net8;observability;audit;exception-logging;error-logging;log-middleware;di;dependency-injection;modular-logging;composite-logger;centralized-logging;structured-logging;logging-framework;log-to-file;log-to-db;mscore;log-service;api-logging;web-api-logging;log-rotation;custom-logger;log-extensions</PackageTags>
+    <PackageReleaseNotes>Initial release of MsCore.Framework.Logging</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\PackageIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+  </ItemGroup>
+
+</Project>

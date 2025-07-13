@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageIcon>PackageIcon.png</PackageIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MsCore.Framework.Utilities – Centralized Utility and Helper Functions for .NET</Title>
+    <Authors>Mustafa Sözer</Authors>
+    <Company>Mustafa Sözer</Company>
+    <Description>MsCore.Framework.Utilities is a collection of centralized utility classes and extension methods designed to simplify common tasks in .NET applications. It includes helper functions for collections, dates, strings, numbers, HTTP requests, caching, file operations, and configuration management. Fully compatible with dependency injection and ideal for modular development.</Description>
+    <Copyright>© 2025 Mustafa Sözer. Licensed under the MIT License.</Copyright>
+    <PackageProjectUrl>https://github.com/mustafaszr/MsCore.Framework</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mustafaszr/MsCore.Framework.git</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>utilities;helpers;extensions;http-helper;cache-helper;file-helper;datetime-helper;string-helper;collection-extensions;config-helper;di;dependency-injection;dotnet;net8;modular;infrastructure;common-tasks;reusable;mscore;utility-library;aspnetcore;helper-functions;core-helpers;centralized-utilities</PackageTags>
+    <PackageReleaseNotes>Initial release of MsCore.Framework.Utilities</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\PackageIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.7" />
+  </ItemGroup>
+
+</Project>

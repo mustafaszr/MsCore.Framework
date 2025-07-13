@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageIcon>PackageIcon.png</PackageIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Mustafa Sözer</Authors>
+    <Company>Mustafa Sözer</Company>
+    <RepositoryType>git</RepositoryType>
+    <Title>MsCore.Framework – Lightweight, Extensible .NET Framework with Logging, Repository, and Utilities</Title>
+    <Description>MsCore.Framework is a modular and extensible infrastructure library for .NET applications. It provides a standardized API response model, centralized exception handling, validation middleware, and includes submodules for logging, repository patterns, and utility helpers to streamline backend development.
+</Description>
+    <Copyright>© 2025 Mustafa Sözer. Licensed under the MIT License.</Copyright>
+    <PackageProjectUrl>https://github.com/mustafaszr/MsCore.Framework</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/mustafaszr/MsCore.Framework.git</RepositoryUrl>
+    <PackageReleaseNotes>Initial release of MsCore.Framework. Includes modular structure with standardized API response, logging, repository pattern, and utility helpers.</PackageReleaseNotes>
+    <PackageTags>dotnet;net;net8;framework;modular;microservices;api;infrastructure;core;logging;middleware;repository;unitofwork;generic-repository;database;exception-handling;error-handling;http;httpclient;helper;utilities;extensions;di;dependency-injection;validation;fluentvalidation;standard-response;api-response;response-wrapper;error-response;pagination;file-logger;db-logger;log-entity;request-logging;response-logging;efcore;entityframework;linq;expression-builder;abstraction;service-layer;dotnetcore;mscore;modular-architecture;nuget;backend;developer-tools</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\PackageIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MsCore.Framework.Logging\MsCore.Framework.Logging.csproj" />
+    <ProjectReference Include="..\MsCore.Framework.Repository\MsCore.Framework.Repository.csproj" />
+    <ProjectReference Include="..\MsCore.Framework.Utilities\MsCore.Framework.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
